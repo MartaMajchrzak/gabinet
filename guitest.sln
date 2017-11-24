@@ -6,7 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guitest", "guitest\guitest.csproj", "{9E419392-D781-4F28-9517-DC001BAC1A5A}"
 EndProject
 Global
-	/*GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
@@ -23,4 +23,4 @@ Global
 		SolutionGuid = {D2982ACC-99E3-44CC-B4BF-450EEFBE2864}
 	EndGlobalSection
 EndGlobal
-*/
+
