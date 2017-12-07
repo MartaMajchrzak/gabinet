@@ -1,19 +1,12 @@
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
     {
-  
-      
+        
         public Form1()
         {
             InitializeComponent();
@@ -41,22 +34,58 @@ namespace WindowsFormsApp1
                   
         private void button2_Click(object sender, EventArgs e)
         {
-            Close();
+            //Close();
 
 
-            using (Ola form2 = new Ola())
-            {
+            //using (Ola form2 = new Ola())
+            //{
                 //form2.Show(); // opcja otwiera się drugie okienko, dwa równolegle 
-                form2.ShowDialog();
-            }
+                //form2.ShowDialog();
+           // }
         }
 
        
         private void button1_Click(object sender, EventArgs e)
         {
+            
+              
+                if (MessageBox.Show("Do you want to exit?", "My Application",
+                      MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+                      == DialogResult.Yes)
+                {
+                    Application.Exit();
+                }
+            
+
             //magia 
-            MessageBox.Show("Zapisano pacjenta");
-            Application.Exit();
+            //string messageBoxText = "Do you want to save changes?";
+            //string caption = "Word Processor";
+            //MessageBoxButton button = MessageBoxButton.YesNoCancel;
+            //MessageBoxImage icon = MessageBoxImage.Warning;
+           // MessageBox.Show("Czy na pewno chcesz zamknąć?",
+                //MessageBoxButtons.YesNoCancel,
+               // MessageBoxIcon.Warning);
+
+            //Application.Exit();
+            // Display message box
+            //MessageBoxResult result = MessageBox.Show(messageBoxText, caption, button, icon);
+
+            // Process message box results
+            //switch (result)
+           // {
+                //case MessageBoxResult.Yes:
+                    // User pressed Yes button
+                    // ...
+                    //break;
+                //case MessageBoxResult.No:
+                    // User pressed No button
+                    // ...
+                    break;
+                //case MessageBoxResult.Cancel:
+                    // User pressed Cancel button
+                    // ...
+                   // break;
+            //}
         }
     }
 }
