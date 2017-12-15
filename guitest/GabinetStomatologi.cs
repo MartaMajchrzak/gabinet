@@ -55,7 +55,7 @@ namespace guitest
         private void buttonzarejestruj_Click(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
-            db.ZarejestrujPacjenta(textBoxImie.Text, textBoxNazwisko.Text, textBoxemail.Text, textBoxnrtel.Text, textBoxPesel.Text, dataurPacjenta.Text, textBoxadreskores.Text, textBoxkod.Text);
+            db.ZarejestrujPacjenta(textBoxImie.Text, textBoxNazwisko.Text, textBoxemail.Text, textBoxnrtel.Text, textBoxPesel.Text, dataurPacjenta.Text, textBoxadreskores.Text);
            
            textBoxImie.Text = "";
             textBoxNazwisko.Text = "";
@@ -65,7 +65,7 @@ namespace guitest
            textBoxPesel.Text = "";
             dataurPacjenta.Text = "";
             textBoxadreskores.Text = "";
-            textBoxkod.Text = "";
+           
            /* Pacjent.Imie = textBoxImie.Text;
             Pacjent.Nazwisko = textBoxNazwisko.Text;
             Pacjent.Email = textBoxemail.Text;
