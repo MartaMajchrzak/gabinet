@@ -8,37 +8,38 @@ namespace guitest
 {
    public class Pacjent
     {
-        public int nrPacjenta { get; set; }
-        public  string Imie { get; set; }
-        public  string Nazwisko { get; set; }
-        public  string Email { get; set; }
-        public  string nrPesel { get ; set; }
-        public  string Nrtelefonu { get; set; } 
-        public  string dataUrodzenia { get; set; } 
-        public string Kod { get; set; }
-        public  string Ulica { get; set; }
-        public  int ID { get; set; }
+       // public int nrPacjenta { get; set; }
+        public  string imie { get; set; }
+        public  string nazwisko { get; set; }
+        public string PESEL { get; set; }
+        public  string telefon { get; set; }
+        public string eMail { get; set; }
+
+        public string dataUrodzenia { get; set; } 
+       
+        public  string adresKorespondencyjny { get; set; }
+        public  int IDpacjent { get; set; }
         public string FullInfo// kolejnosc wlasciwosci wg wierszy w bazie
         {
             get
             {  
-                return $"{ID} {Imie} {Nazwisko} ({Email}) "; //to zwraca przy wyszukiwaniu w list boxie
+                return $"{IDpacjent} {imie} {nazwisko} ({eMail}) "; //to zwraca przy wyszukiwaniu w list boxie
             }
          
          }
         public string NrTel
         {
-            get { return Nrtelefonu; }
+            get { return telefon; }
             // Nrtelefonu to w klasie pacjent
             set
             {
                 if (value.Length == 9)
                 {
-                    Nrtelefonu = value;
+                    telefon = value;
                 }
                 else
                 {
-                    Nrtelefonu = "000000000";
+                    telefon = "000000000";
                 }
             }
 

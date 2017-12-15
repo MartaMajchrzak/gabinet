@@ -26,13 +26,13 @@ namespace guitest
             } //query chcemy dane z bazy, chcemy liste pacjenta, <pacjent>- typ danych
         }
 
-        public void ZarejestrujPacjenta(string imie, string nazwisko, string adresEmail, string nrTel, string numerPesel, string Dataur, string ulica, string kod)
+        public void ZarejestrujPacjenta(string Imie, string Nazwisko, string adresEmail, string nrTel, string numerPesel, string Dataur, string ulica, string kod)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("NazwaBazy")))
             {
                 
              List<Pacjent> pacjenci = new List<Pacjent>();
-             pacjenci.Add(new Pacjent{ Imie = imie, Nazwisko = nazwisko, Email = adresEmail, Nrtelefonu = nrTel,  nrPesel= numerPesel, dataUrodzenia=Dataur, Ulica=ulica, Kod=kod  });
+             pacjenci.Add(new Pacjent{ imie = Imie, nazwisko = Nazwisko, eMail = adresEmail, telefon = nrTel,  PESEL= numerPesel, dataUrodzenia=Dataur, adresKorespondencyjny=ulica, Kod=kod  });
              connection.Execute("nazwa procedury @parametry imie...", pacjenci); //dodaje te parametry do bazy danych, parametry z klasy pacjent
 // procedura z bazy danych dodajaca pacjentow
             }

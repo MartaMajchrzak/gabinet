@@ -39,10 +39,7 @@
             this.textBoxemail = new System.Windows.Forms.TextBox();
             this.labelnrtel = new System.Windows.Forms.Label();
             this.textBoxnrtel = new System.Windows.Forms.TextBox();
-            this.labelulica = new System.Windows.Forms.Label();
-            this.textBoxulica = new System.Windows.Forms.TextBox();
-            this.labelkodmiasto = new System.Windows.Forms.Label();
-            this.textBoxkod = new System.Windows.Forms.TextBox();
+            this.textBoxadreskores = new System.Windows.Forms.TextBox();
             this.labelPesel = new System.Windows.Forms.Label();
             this.textBoxPesel = new System.Windows.Forms.TextBox();
             this.labelDataur = new System.Windows.Forms.Label();
@@ -57,6 +54,7 @@
             this.nowyPacjent_label = new System.Windows.Forms.Label();
             this.szukajPacjenta_label = new System.Windows.Forms.Label();
             this.pacjent_label = new System.Windows.Forms.Label();
+            this.adreskoreslbl = new System.Windows.Forms.Label();
             this.groupBoxNowyPacjent.SuspendLayout();
             this.groupBoxDanekont.SuspendLayout();
             this.SuspendLayout();
@@ -136,17 +134,15 @@
             // 
             // groupBoxDanekont
             // 
+            this.groupBoxDanekont.Controls.Add(this.adreskoreslbl);
             this.groupBoxDanekont.Controls.Add(this.labelemail);
             this.groupBoxDanekont.Controls.Add(this.textBoxemail);
             this.groupBoxDanekont.Controls.Add(this.labelnrtel);
             this.groupBoxDanekont.Controls.Add(this.textBoxnrtel);
-            this.groupBoxDanekont.Controls.Add(this.labelulica);
-            this.groupBoxDanekont.Controls.Add(this.textBoxulica);
-            this.groupBoxDanekont.Controls.Add(this.labelkodmiasto);
-            this.groupBoxDanekont.Controls.Add(this.textBoxkod);
-            this.groupBoxDanekont.Location = new System.Drawing.Point(16, 97);
+            this.groupBoxDanekont.Controls.Add(this.textBoxadreskores);
+            this.groupBoxDanekont.Location = new System.Drawing.Point(16, 100);
             this.groupBoxDanekont.Name = "groupBoxDanekont";
-            this.groupBoxDanekont.Size = new System.Drawing.Size(228, 158);
+            this.groupBoxDanekont.Size = new System.Drawing.Size(267, 137);
             this.groupBoxDanekont.TabIndex = 8;
             this.groupBoxDanekont.TabStop = false;
             this.groupBoxDanekont.Text = "Dane kontaktowe";
@@ -154,7 +150,7 @@
             // labelemail
             // 
             this.labelemail.AutoSize = true;
-            this.labelemail.Location = new System.Drawing.Point(12, 127);
+            this.labelemail.Location = new System.Drawing.Point(20, 107);
             this.labelemail.Name = "labelemail";
             this.labelemail.Size = new System.Drawing.Size(60, 13);
             this.labelemail.TabIndex = 9;
@@ -163,7 +159,7 @@
             // 
             // textBoxemail
             // 
-            this.textBoxemail.Location = new System.Drawing.Point(92, 122);
+            this.textBoxemail.Location = new System.Drawing.Point(141, 100);
             this.textBoxemail.Name = "textBoxemail";
             this.textBoxemail.Size = new System.Drawing.Size(120, 20);
             this.textBoxemail.TabIndex = 8;
@@ -172,7 +168,7 @@
             // labelnrtel
             // 
             this.labelnrtel.AutoSize = true;
-            this.labelnrtel.Location = new System.Drawing.Point(5, 90);
+            this.labelnrtel.Location = new System.Drawing.Point(13, 70);
             this.labelnrtel.Name = "labelnrtel";
             this.labelnrtel.Size = new System.Drawing.Size(77, 13);
             this.labelnrtel.TabIndex = 7;
@@ -180,45 +176,19 @@
             // 
             // textBoxnrtel
             // 
-            this.textBoxnrtel.Location = new System.Drawing.Point(92, 90);
+            this.textBoxnrtel.Location = new System.Drawing.Point(141, 67);
             this.textBoxnrtel.Name = "textBoxnrtel";
             this.textBoxnrtel.Size = new System.Drawing.Size(120, 20);
             this.textBoxnrtel.TabIndex = 6;
             this.textBoxnrtel.TextChanged += new System.EventHandler(this.textBoxnrtel_TextChanged);
             // 
-            // labelulica
+            // textBoxadreskores
             // 
-            this.labelulica.AutoSize = true;
-            this.labelulica.Location = new System.Drawing.Point(18, 64);
-            this.labelulica.Name = "labelulica";
-            this.labelulica.Size = new System.Drawing.Size(32, 13);
-            this.labelulica.TabIndex = 5;
-            this.labelulica.Text = "ulica ";
-            // 
-            // textBoxulica
-            // 
-            this.textBoxulica.Location = new System.Drawing.Point(92, 61);
-            this.textBoxulica.Name = "textBoxulica";
-            this.textBoxulica.Size = new System.Drawing.Size(120, 20);
-            this.textBoxulica.TabIndex = 4;
-            this.textBoxulica.TextChanged += new System.EventHandler(this.textBoxulica_TextChanged);
-            // 
-            // labelkodmiasto
-            // 
-            this.labelkodmiasto.AutoSize = true;
-            this.labelkodmiasto.Location = new System.Drawing.Point(6, 38);
-            this.labelkodmiasto.Name = "labelkodmiasto";
-            this.labelkodmiasto.Size = new System.Drawing.Size(63, 13);
-            this.labelkodmiasto.TabIndex = 3;
-            this.labelkodmiasto.Text = "kod i miasto";
-            // 
-            // textBoxkod
-            // 
-            this.textBoxkod.Location = new System.Drawing.Point(92, 35);
-            this.textBoxkod.Name = "textBoxkod";
-            this.textBoxkod.Size = new System.Drawing.Size(120, 20);
-            this.textBoxkod.TabIndex = 1;
-            this.textBoxkod.TextChanged += new System.EventHandler(this.textBoxkod_TextChanged);
+            this.textBoxadreskores.Location = new System.Drawing.Point(141, 35);
+            this.textBoxadreskores.Name = "textBoxadreskores";
+            this.textBoxadreskores.Size = new System.Drawing.Size(120, 20);
+            this.textBoxadreskores.TabIndex = 4;
+            this.textBoxadreskores.TextChanged += new System.EventHandler(this.textBoxulica_TextChanged);
             // 
             // labelPesel
             // 
@@ -352,6 +322,16 @@
             this.pacjent_label.Text = "Karta Pacjenta";
             this.pacjent_label.Click += new System.EventHandler(this.pacjent_label_Click);
             // 
+            // adreskoreslbl
+            // 
+            this.adreskoreslbl.AutoSize = true;
+            this.adreskoreslbl.Location = new System.Drawing.Point(13, 35);
+            this.adreskoreslbl.Name = "adreskoreslbl";
+            this.adreskoreslbl.Size = new System.Drawing.Size(122, 13);
+            this.adreskoreslbl.TabIndex = 10;
+            this.adreskoreslbl.Text = "adres korespondencyjny";
+            this.adreskoreslbl.Click += new System.EventHandler(this.adreskoreslbl_Click);
+            // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,15 +381,7 @@
         //wez string zapisz do tbalicy
         private System.Windows.Forms.Label labelnrtel;
         private System.Windows.Forms.TextBox textBoxnrtel;
-        //zamien string na int, okresl dlugosc wprowazonych cyfr, nie pozwol by wpisano za duzo
-        //zapisz do tablicy
-        private System.Windows.Forms.Label labelulica;
-        private System.Windows.Forms.TextBox textBoxulica;
-        // wez string zapisz do tablicy
-        private System.Windows.Forms.Label labelkodmiasto;
-        // wybierz z listy, co jest wyjsciem pobierz liste miast z bazy danych
-        //przypisz wartosci liczbowe stringom nazwom iast, zapisz w tablicy
-        private System.Windows.Forms.TextBox textBoxkod;
+        private System.Windows.Forms.TextBox textBoxadreskores;
         //zamien string na ciag int, ustaw format np. 57-300, nie pozwol na blad niech sie samo pisz
         //kolejne miejsce w tablicy
         private System.Windows.Forms.Label labelPesel;
@@ -430,6 +402,7 @@
         private System.Windows.Forms.Label nowyPacjent_label;
         private System.Windows.Forms.Label szukajPacjenta_label;
         private System.Windows.Forms.Label pacjent_label;
+        private System.Windows.Forms.Label adreskoreslbl;
         // bierze wartosc string i zapisuje jako imie , przechowuje je w tablicy nowy pacjent
     }
 }
