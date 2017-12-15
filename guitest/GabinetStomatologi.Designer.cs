@@ -51,16 +51,12 @@
             this.labelImię = new System.Windows.Forms.Label();
             this.textBoxNazwisko = new System.Windows.Forms.TextBox();
             this.textBoxImie = new System.Windows.Forms.TextBox();
-            this.buttonTerminarz = new System.Windows.Forms.Button();
             this.buttonPacjent = new System.Windows.Forms.Button();
-            this.buttonUmowpacjenta = new System.Windows.Forms.Button();
             this.buttonszukaj = new System.Windows.Forms.Button();
             this.buttonNowypacjent = new System.Windows.Forms.Button();
             this.nowyPacjent_label = new System.Windows.Forms.Label();
             this.szukajPacjenta_label = new System.Windows.Forms.Label();
-            this.dodajWizyte_label = new System.Windows.Forms.Label();
             this.pacjent_label = new System.Windows.Forms.Label();
-            this.terminarz_label = new System.Windows.Forms.Label();
             this.groupBoxNowyPacjent.SuspendLayout();
             this.groupBoxDanekont.SuspendLayout();
             this.SuspendLayout();
@@ -86,7 +82,7 @@
             // 
             // groupBoxNowyPacjent
             // 
-            this.groupBoxNowyPacjent.BackColor = System.Drawing.Color.PaleGreen;
+            this.groupBoxNowyPacjent.BackColor = System.Drawing.Color.AliceBlue;
             this.groupBoxNowyPacjent.Controls.Add(this.btnszukaj);
             this.groupBoxNowyPacjent.Controls.Add(this.listBoxPacjent);
             this.groupBoxNowyPacjent.Controls.Add(this.buttonzarejestruj);
@@ -99,12 +95,13 @@
             this.groupBoxNowyPacjent.Controls.Add(this.labelImię);
             this.groupBoxNowyPacjent.Controls.Add(this.textBoxNazwisko);
             this.groupBoxNowyPacjent.Controls.Add(this.textBoxImie);
-            this.groupBoxNowyPacjent.Location = new System.Drawing.Point(12, 162);
+            this.groupBoxNowyPacjent.Location = new System.Drawing.Point(12, 149);
             this.groupBoxNowyPacjent.Name = "groupBoxNowyPacjent";
-            this.groupBoxNowyPacjent.Size = new System.Drawing.Size(590, 312);
+            this.groupBoxNowyPacjent.Size = new System.Drawing.Size(590, 325);
             this.groupBoxNowyPacjent.TabIndex = 7;
             this.groupBoxNowyPacjent.TabStop = false;
             this.groupBoxNowyPacjent.Text = "Nowy pacjent";
+            this.groupBoxNowyPacjent.Enter += new System.EventHandler(this.groupBoxNowyPacjent_Enter);
             // 
             // btnszukaj
             // 
@@ -129,7 +126,7 @@
             // 
             this.buttonzarejestruj.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonzarejestruj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonzarejestruj.Location = new System.Drawing.Point(130, 251);
+            this.buttonzarejestruj.Location = new System.Drawing.Point(130, 271);
             this.buttonzarejestruj.Name = "buttonzarejestruj";
             this.buttonzarejestruj.Size = new System.Drawing.Size(98, 35);
             this.buttonzarejestruj.TabIndex = 9;
@@ -149,7 +146,7 @@
             this.groupBoxDanekont.Controls.Add(this.textBoxkod);
             this.groupBoxDanekont.Location = new System.Drawing.Point(16, 97);
             this.groupBoxDanekont.Name = "groupBoxDanekont";
-            this.groupBoxDanekont.Size = new System.Drawing.Size(218, 143);
+            this.groupBoxDanekont.Size = new System.Drawing.Size(228, 158);
             this.groupBoxDanekont.TabIndex = 8;
             this.groupBoxDanekont.TabStop = false;
             this.groupBoxDanekont.Text = "Dane kontaktowe";
@@ -170,6 +167,7 @@
             this.textBoxemail.Name = "textBoxemail";
             this.textBoxemail.Size = new System.Drawing.Size(120, 20);
             this.textBoxemail.TabIndex = 8;
+            this.textBoxemail.TextChanged += new System.EventHandler(this.textBoxemail_TextChanged);
             // 
             // labelnrtel
             // 
@@ -291,43 +289,23 @@
             this.textBoxImie.TabIndex = 0;
             this.textBoxImie.TextChanged += new System.EventHandler(this.textBoxImie_TextChanged);
             // 
-            // buttonTerminarz
-            // 
-            this.buttonTerminarz.BackgroundImage = global::guitest.Properties.Resources.calendar;
-            this.buttonTerminarz.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonTerminarz.Location = new System.Drawing.Point(490, 29);
-            this.buttonTerminarz.Name = "buttonTerminarz";
-            this.buttonTerminarz.Size = new System.Drawing.Size(64, 57);
-            this.buttonTerminarz.TabIndex = 6;
-            this.buttonTerminarz.UseVisualStyleBackColor = true;
-            // 
             // buttonPacjent
             // 
             this.buttonPacjent.BackgroundImage = global::guitest.Properties.Resources.pacjent;
             this.buttonPacjent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonPacjent.Location = new System.Drawing.Point(376, 29);
+            this.buttonPacjent.Location = new System.Drawing.Point(488, 29);
             this.buttonPacjent.Name = "buttonPacjent";
             this.buttonPacjent.Size = new System.Drawing.Size(64, 57);
             this.buttonPacjent.TabIndex = 5;
             this.buttonPacjent.UseVisualStyleBackColor = true;
             this.buttonPacjent.Click += new System.EventHandler(this.buttonPacjent_Click);
             // 
-            // buttonUmowpacjenta
-            // 
-            this.buttonUmowpacjenta.BackgroundImage = global::guitest.Properties.Resources.calendar_add_512;
-            this.buttonUmowpacjenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonUmowpacjenta.Location = new System.Drawing.Point(262, 29);
-            this.buttonUmowpacjenta.Name = "buttonUmowpacjenta";
-            this.buttonUmowpacjenta.Size = new System.Drawing.Size(64, 57);
-            this.buttonUmowpacjenta.TabIndex = 4;
-            this.buttonUmowpacjenta.UseVisualStyleBackColor = true;
-            // 
             // buttonszukaj
             // 
             this.buttonszukaj.BackgroundImage = global::guitest.Properties.Resources.lupka;
             this.buttonszukaj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonszukaj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonszukaj.Location = new System.Drawing.Point(148, 29);
+            this.buttonszukaj.Location = new System.Drawing.Point(278, 29);
             this.buttonszukaj.Name = "buttonszukaj";
             this.buttonszukaj.Size = new System.Drawing.Size(64, 57);
             this.buttonszukaj.TabIndex = 3;
@@ -338,7 +316,7 @@
             this.buttonNowypacjent.BackgroundImage = global::guitest.Properties.Resources.plus2;
             this.buttonNowypacjent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.buttonNowypacjent.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.buttonNowypacjent.Location = new System.Drawing.Point(34, 29);
+            this.buttonNowypacjent.Location = new System.Drawing.Point(62, 29);
             this.buttonNowypacjent.Name = "buttonNowypacjent";
             this.buttonNowypacjent.Size = new System.Drawing.Size(64, 57);
             this.buttonNowypacjent.TabIndex = 2;
@@ -348,7 +326,7 @@
             // nowyPacjent_label
             // 
             this.nowyPacjent_label.AutoSize = true;
-            this.nowyPacjent_label.Location = new System.Drawing.Point(33, 89);
+            this.nowyPacjent_label.Location = new System.Drawing.Point(61, 89);
             this.nowyPacjent_label.Name = "nowyPacjent_label";
             this.nowyPacjent_label.Size = new System.Drawing.Size(73, 13);
             this.nowyPacjent_label.TabIndex = 8;
@@ -358,61 +336,40 @@
             // szukajPacjenta_label
             // 
             this.szukajPacjenta_label.AutoSize = true;
-            this.szukajPacjenta_label.Location = new System.Drawing.Point(139, 89);
+            this.szukajPacjenta_label.Location = new System.Drawing.Point(269, 89);
             this.szukajPacjenta_label.Name = "szukajPacjenta_label";
             this.szukajPacjenta_label.Size = new System.Drawing.Size(84, 13);
             this.szukajPacjenta_label.TabIndex = 9;
             this.szukajPacjenta_label.Text = "Szukaj Pacjenta";
             // 
-            // dodajWizyte_label
-            // 
-            this.dodajWizyte_label.AutoSize = true;
-            this.dodajWizyte_label.Location = new System.Drawing.Point(261, 89);
-            this.dodajWizyte_label.Name = "dodajWizyte_label";
-            this.dodajWizyte_label.Size = new System.Drawing.Size(65, 13);
-            this.dodajWizyte_label.TabIndex = 10;
-            this.dodajWizyte_label.Text = "dodaj wizytę";
-            // 
             // pacjent_label
             // 
             this.pacjent_label.AutoSize = true;
-            this.pacjent_label.Location = new System.Drawing.Point(388, 89);
+            this.pacjent_label.Location = new System.Drawing.Point(485, 89);
             this.pacjent_label.Name = "pacjent_label";
-            this.pacjent_label.Size = new System.Drawing.Size(42, 13);
+            this.pacjent_label.Size = new System.Drawing.Size(77, 13);
             this.pacjent_label.TabIndex = 11;
-            this.pacjent_label.Text = "pacjent";
+            this.pacjent_label.Text = "Karta Pacjenta";
             this.pacjent_label.Click += new System.EventHandler(this.pacjent_label_Click);
-            // 
-            // terminarz_label
-            // 
-            this.terminarz_label.AutoSize = true;
-            this.terminarz_label.Location = new System.Drawing.Point(499, 89);
-            this.terminarz_label.Name = "terminarz_label";
-            this.terminarz_label.Size = new System.Drawing.Size(49, 13);
-            this.terminarz_label.TabIndex = 12;
-            this.terminarz_label.Text = "terminarz";
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(614, 486);
-            this.Controls.Add(this.terminarz_label);
             this.Controls.Add(this.pacjent_label);
-            this.Controls.Add(this.dodajWizyte_label);
             this.Controls.Add(this.szukajPacjenta_label);
             this.Controls.Add(this.nowyPacjent_label);
             this.Controls.Add(this.groupBoxNowyPacjent);
-            this.Controls.Add(this.buttonTerminarz);
             this.Controls.Add(this.buttonPacjent);
-            this.Controls.Add(this.buttonUmowpacjenta);
             this.Controls.Add(this.buttonszukaj);
             this.Controls.Add(this.buttonNowypacjent);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.wyborDaty);
             this.Name = "GUI";
             this.Text = "Gabinet stomatologiczny ";
+            this.Load += new System.EventHandler(this.GUI_Load);
             this.groupBoxNowyPacjent.ResumeLayout(false);
             this.groupBoxNowyPacjent.PerformLayout();
             this.groupBoxDanekont.ResumeLayout(false);
@@ -430,11 +387,7 @@
         //nowy pacjent 
         private System.Windows.Forms.Button buttonszukaj;
         //stworz nowa karte
-        private System.Windows.Forms.Button buttonUmowpacjenta;
-        //stworz nowa karte
         private System.Windows.Forms.Button buttonPacjent;
-        //wyswietla informacje o pacjencie
-        private System.Windows.Forms.Button buttonTerminarz;
         // stworz nowa karte
         private System.Windows.Forms.GroupBox groupBoxNowyPacjent;
         //mozliiwe tylko po wcisnieciu zarejestruj ,potem idzie do karty umow
@@ -476,9 +429,7 @@
         private System.Windows.Forms.Button btnszukaj;
         private System.Windows.Forms.Label nowyPacjent_label;
         private System.Windows.Forms.Label szukajPacjenta_label;
-        private System.Windows.Forms.Label dodajWizyte_label;
         private System.Windows.Forms.Label pacjent_label;
-        private System.Windows.Forms.Label terminarz_label;
         // bierze wartosc string i zapisuje jako imie , przechowuje je w tablicy nowy pacjent
     }
 }

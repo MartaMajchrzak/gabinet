@@ -25,9 +25,11 @@ namespace guitest
 
         }
 
-        private void buttonNowypacjent_Click(object sender, EventArgs e)
+        private void buttonNowypacjent_Click(object sender, EventArgs e) // przycisk nowy pacjent otwiera okno rej
         {
-
+            GUI nowyPacjent = new GUI();
+            nowyPacjent.Show();
+            Visible = false; 
         }
 
         private void textBoxImie_TextChanged(object sender, EventArgs e)
@@ -55,16 +57,24 @@ namespace guitest
             DataAccess db = new DataAccess();
             db.ZarejestrujPacjenta(textBoxImie.Text, textBoxNazwisko.Text, textBoxemail.Text, textBoxnrtel.Text, textBoxPesel.Text, dataurPacjenta.Text, textBoxulica.Text, textBoxkod.Text);
            
-            textBoxImie.Text = "";
+           textBoxImie.Text = "";
             textBoxNazwisko.Text = "";
             textBoxemail.Text = "";
             textBoxnrtel.Text = "";
-            textBoxPesel.Text = "";
-            textBoxPesel.Text = "";
+            
+           textBoxPesel.Text = "";
             dataurPacjenta.Text = "";
             textBoxulica.Text = "";
             textBoxkod.Text = "";
-
+           /* Pacjent.Imie = textBoxImie.Text;
+            Pacjent.Nazwisko = textBoxNazwisko.Text;
+            Pacjent.Email = textBoxemail.Text;
+            Pacjent.NrTel = textBoxnrtel.Text;
+            Pacjent.nrPesel = textBoxPesel.Text;
+            Pacjent.dataUrodzenia = dataurPacjenta.Text;
+            Pacjent.Ulica = textBoxulica.Text;
+            Pacjent.Kod = textBoxkod.Text;*/
+            
 
 
 
@@ -102,16 +112,12 @@ namespace guitest
 
         }
 
-        private void buttonPacjent_Click(object sender, EventArgs e)
+        private void buttonPacjent_Click(object sender, EventArgs e)// przysisk pacjent otwiera karte pacjenta
         {
-           /* Close();
-           // using (kartaZabieg karta = new kartaZabieg()) 
-            kartaPacjenta kartaZabieg= new kartaPacjenta())
-            {
-                kartaZabieg.Show();
-                kartaZabieg.ShowDialog();
-            }*/
-                
+            kartaZabieg karta = new kartaZabieg();
+            karta.Show();
+            Visible = false;
+           
                 
                 
         }
@@ -127,6 +133,21 @@ namespace guitest
         }
 
         private void pacjent_label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxNowyPacjent_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxemail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GUI_Load(object sender, EventArgs e)
         {
 
         }

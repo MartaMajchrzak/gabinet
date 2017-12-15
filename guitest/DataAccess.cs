@@ -13,8 +13,8 @@ namespace guitest
     { //tworzymy metode
         public List <Pacjent> GetPeople (string nazwisko)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("NazwaBazy")))//pobierz cnn string z
-                //helpera dla bazy danych o nazwie: 
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("tablicaPacjent")))//pobierz cnn string z
+                //helpera dla bazy danych o nazwie: tablica pacjent
             {
                 //rozmawiamy z sql
 
