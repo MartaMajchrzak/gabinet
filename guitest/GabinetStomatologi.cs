@@ -114,12 +114,14 @@ namespace guitest
 
         private void buttonPacjent_Click(object sender, EventArgs e)// przysisk pacjent otwiera karte pacjenta
         {
-            kartaZabieg karta = new kartaZabieg();
+           
+           
+            WindowsFormsApp1.Form1 karta = new WindowsFormsApp1.Form1();
             karta.Show();
             Visible = false;
-           
-                
-                
+
+
+
         }
 
         private void textBoxulica_TextChanged(object sender, EventArgs e)

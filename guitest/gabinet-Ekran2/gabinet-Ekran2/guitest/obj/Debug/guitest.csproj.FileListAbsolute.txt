@@ -1,0 +1,47 @@
+C:\Users\marta\source\repos\guitest\guitest\bin\Debug\guitest.exe.config
+C:\Users\marta\source\repos\guitest\guitest\bin\Debug\guitest.exe
+C:\Users\marta\source\repos\guitest\guitest\bin\Debug\guitest.pdb
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.csprojResolveAssemblyReference.cache
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.GUI.resources
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.Properties.Resources.resources
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.csproj.GenerateResource.Cache
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.csproj.CoreCompileInputs.cache
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.exe
+C:\Users\marta\source\repos\guitest\guitest\obj\Debug\guitest.pdb
+D:\IIsemIIst\jprogr\guitest\guitest\bin\Debug\guitest.exe.config
+D:\IIsemIIst\jprogr\guitest\guitest\bin\Debug\guitest.exe
+D:\IIsemIIst\jprogr\guitest\guitest\bin\Debug\guitest.pdb
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.csprojResolveAssemblyReference.cache
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.GUI.resources
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.Properties.Resources.resources
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.csproj.GenerateResource.Cache
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.csproj.CoreCompileInputs.cache
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.exe
+D:\IIsemIIst\jprogr\guitest\guitest\obj\Debug\guitest.pdb
+D:\IIsemIIst\jprogr\guitest\guitest\bin\Debug\Dapper.dll
+D:\IIsemIIst\jprogr\guitest\guitest\bin\Debug\Dapper.xml
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\bin\Debug\guitest.exe.config
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\bin\Debug\guitest.exe
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\bin\Debug\guitest.pdb
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\bin\Debug\Dapper.dll
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\bin\Debug\Dapper.xml
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.GUI.resources
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.Properties.Resources.resources
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.csproj.GenerateResource.Cache
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.exe
+C:\Users\Aleksandra Zając\source\Desktop\guitest\guitest\obj\Debug\guitest.pdb
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\bin\Debug\guitest.exe.config
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\bin\Debug\guitest.exe
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\bin\Debug\guitest.pdb
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\bin\Debug\Dapper.dll
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\bin\Debug\Dapper.xml
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.csprojResolveAssemblyReference.cache
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.kartaZabieg.resources
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.GUI.resources
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.Properties.Resources.resources
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.csproj.GenerateResource.Cache
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.csproj.CoreCompileInputs.cache
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.exe
+D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.pdb

@@ -28,12 +28,12 @@ namespace guitest
 
         public void ZarejestrujPacjenta(string Imie, string Nazwisko, string adresEmail, string nrTel, string numerPesel, string Dataur, string ulica)
         {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("NazwaBazy")))
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("bazaGabinetuStomatologicznego")))
             {
                 
              List<Pacjent> pacjenci = new List<Pacjent>();
              pacjenci.Add(new Pacjent{ imie = Imie, nazwisko = Nazwisko, eMail = adresEmail, telefon = nrTel,  PESEL= numerPesel, dataUrodzenia=Dataur, adresKorespondencyjny=ulica });
-             connection.Execute("nazwa procedury @parametry imie...", pacjenci); //dodaje te parametry do bazy danych, parametry z klasy pacjent
+             connection.Execute("dbo.tablicaPacjent @imie, @nazwisko, @PESEL, @telefon, @eMail, @dataUrodzenia, @adresKorespondencyjny", pacjenci); //dodaje te parametry do bazy danych, parametry z klasy pacjent
 // procedura z bazy danych dodajaca pacjentow
             }
         }

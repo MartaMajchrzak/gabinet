@@ -50,11 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess.cs" />
-    <Compile Include="kartaPacjenta.cs">
+    <Compile Include="Drugi ekran_stomatologiczny.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="kartaPacjenta.Designer.cs">
-      <DependentUpon>kartaPacjenta.cs</DependentUpon>
+    <Compile Include="Drugi ekran_stomatologiczny.designer.cs">
+      <DependentUpon>Drugi ekran_stomatologiczny.cs</DependentUpon>
     </Compile>
     <Compile Include="GabinetStomatologi.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     <Compile Include="Pacjent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="kartaPacjenta.resx">
-      <DependentUpon>kartaPacjenta.cs</DependentUpon>
+    <EmbeddedResource Include="Drugi ekran_stomatologiczny.resx">
+      <DependentUpon>Drugi ekran_stomatologiczny.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GabinetStomatologi.resx">
       <DependentUpon>GabinetStomatologi.cs</DependentUpon>
