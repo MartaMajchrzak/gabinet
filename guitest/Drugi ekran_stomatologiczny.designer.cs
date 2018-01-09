@@ -756,7 +756,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(632, 496);
+            this.ClientSize = new System.Drawing.Size(614, 486);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox22);
             this.Controls.Add(this.textBox21);
