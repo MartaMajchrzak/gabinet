@@ -45,3 +45,16 @@ D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.cspro
 D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.exe
 D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.pdb
 D:\IIsemIIst\jprogr\projektKartaPacjenta\guitest\guitest\obj\Debug\guitest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\bin\Debug\guitest.exe.config
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\bin\Debug\guitest.exe
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\bin\Debug\guitest.pdb
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\bin\Debug\Dapper.dll
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\bin\Debug\Dapper.xml
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.GUI.resources
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.Properties.Resources.resources
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.csproj.GenerateResource.Cache
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.csproj.CoreCompileInputs.cache
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.exe
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.pdb

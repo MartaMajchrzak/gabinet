@@ -52,12 +52,19 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             //magia 
-            MessageBox.Show("Czy chcesz zapisać pacjenta?");
-           // MessageBoxButtons.YesNoCancel);
-           // MessageBoxIcon.Warning);
-            //MessageBox.Show("Zapisano pacjenta");
-            Application.Exit();
+            //if (MessageBox.Show("Czy chcesz zapisać pacjenta?", "Okno potwierdzenia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+            DialogResult dialogResult = MessageBox.Show("Czy chcesz zapisać pacjenta?", "Okno potwierdzenia", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show("Zapisano pacjenta");
+                Application.Exit();
+            }
+
+
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
