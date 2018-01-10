@@ -23,7 +23,7 @@ namespace guitest
         {
             get
             {  
-                return $"{IDpacjent} {imie} {nazwisko} ({eMail}) "; //to zwraca przy wyszukiwaniu w list boxie
+                return $"{IDpacjent} {imie} {nazwisko} ({eMail} {telefon}) "; //to zwraca przy wyszukiwaniu w list boxie
             }
          
          }

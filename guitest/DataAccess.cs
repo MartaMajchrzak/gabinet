@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Dapper; // Dapper pozwala na pobieranie danych z bazy danych i zapełnianie danych w modelu obiektowym.
 //Następująca metoda pobiera wszystkie rekordy z tabeli pacjent, przechowuje je w pamięci i zwraca kolekcję.
 using System.Data;
+using System.Data.SqlClient;
 
 namespace guitest
 {
@@ -19,35 +20,25 @@ namespace guitest
                 //rozmawiamy z sql
 
                 var output = connection.Query<Pacjent>("dbo.Pacjenci_GetByLastName @Nazwisko", new { Nazwisko = nazwisko }).ToList(); //dbo
-                 //var- zamiana listy w zmienna output
-              // to jest z bazy danych jakas procedura ALTER PROCEDURE, trzeba stworzyc procedure w sql w bazie danych
-                //wywolaj procceddure dbo....i wrzuc do klasy pacjent
+              
                 return output;
             } //query chcemy dane z bazy, chcemy liste pacjenta, <pacjent>- typ danych
         }
 
         public void ZarejestrujPacjenta(string Imie, string Nazwisko, string adresEmail, string nrTel, string numerPesel, string Dataur, string ulica)
-        {
+        {// 
+           
+            
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("bazaGabinetuStomatologicznego")))
-            {
+            {//
+                connection.Open();
                 
              List<Pacjent> pacjenci = new List<Pacjent>();
              pacjenci.Add(new Pacjent{ imie = Imie, nazwisko = Nazwisko, eMail = adresEmail, telefon = nrTel,  PESEL= numerPesel, dataUrodzenia=Dataur, adresKorespondencyjny=ulica });
              connection.Execute("dbo.tablicaPacjent @imie, @nazwisko, @PESEL, @telefon, @eMail, @dataUrodzenia, @adresKorespondencyjny", pacjenci); //dodaje te parametry do bazy danych, parametry z klasy pacjent
-// procedura z bazy danych dodajaca pacjentow
+
             }
         }
-        // tu utworzymy metode zapisz pacjenta 
-        /*public void ZapiszPacjenta(string rozpoznanie, string zabieg, string leki, string zazywaneleki, string zalecenia, string kodchoroby)
-         *  using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("NazwaBazy")))
-            {
-                
-             List<Pacjent> pacjenci = new List<Pacjent>();
-             pacjenci.Add(new Pacjent{  });
-             connection.Execute("nazwa procedury @parametry imie...", pacjenci); //dodaje te parametry do bazy danych, parametry z klasy pacjent
-// procedura z bazy danych dodajaca pacjentow
-            }
-         * 
-         */
+        
     }
 }
