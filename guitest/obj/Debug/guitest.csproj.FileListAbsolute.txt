@@ -58,3 +58,4 @@ C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.csproj
 C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.csproj.CoreCompileInputs.cache
 C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.exe
 C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.pdb
+C:\Users\Aleksandra Zając\source\repos\gabinet\guitest\obj\Debug\guitest.WyszukiwaniePacjenta.resources

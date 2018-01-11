@@ -156,6 +156,18 @@ namespace guitest
 
         private void adreskoreslbl_Click(object sender, EventArgs e)
         {
+           kartaZabieg karta = new kartaZabieg();
+            karta.Show();
+            Visible = false;
+        }
+
+        private void buttonszukaj_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonszukaj_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

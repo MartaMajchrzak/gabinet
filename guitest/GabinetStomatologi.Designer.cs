@@ -35,6 +35,7 @@
             this.listBoxPacjent = new System.Windows.Forms.ListBox();
             this.buttonzarejestruj = new System.Windows.Forms.Button();
             this.groupBoxDanekont = new System.Windows.Forms.GroupBox();
+            this.adreskoreslbl = new System.Windows.Forms.Label();
             this.labelemail = new System.Windows.Forms.Label();
             this.textBoxemail = new System.Windows.Forms.TextBox();
             this.labelnrtel = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@
             this.nowyPacjent_label = new System.Windows.Forms.Label();
             this.szukajPacjenta_label = new System.Windows.Forms.Label();
             this.pacjent_label = new System.Windows.Forms.Label();
-            this.adreskoreslbl = new System.Windows.Forms.Label();
             this.groupBoxNowyPacjent.SuspendLayout();
             this.groupBoxDanekont.SuspendLayout();
             this.SuspendLayout();
@@ -146,6 +146,16 @@
             this.groupBoxDanekont.TabIndex = 8;
             this.groupBoxDanekont.TabStop = false;
             this.groupBoxDanekont.Text = "Dane kontaktowe";
+            // 
+            // adreskoreslbl
+            // 
+            this.adreskoreslbl.AutoSize = true;
+            this.adreskoreslbl.Location = new System.Drawing.Point(13, 35);
+            this.adreskoreslbl.Name = "adreskoreslbl";
+            this.adreskoreslbl.Size = new System.Drawing.Size(122, 13);
+            this.adreskoreslbl.TabIndex = 10;
+            this.adreskoreslbl.Text = "adres korespondencyjny";
+            this.adreskoreslbl.Click += new System.EventHandler(this.adreskoreslbl_Click);
             // 
             // labelemail
             // 
@@ -280,6 +290,7 @@
             this.buttonszukaj.Size = new System.Drawing.Size(64, 57);
             this.buttonszukaj.TabIndex = 3;
             this.buttonszukaj.UseVisualStyleBackColor = true;
+            this.buttonszukaj.Click += new System.EventHandler(this.buttonszukaj_Click_1);
             // 
             // buttonNowypacjent
             // 
@@ -321,16 +332,6 @@
             this.pacjent_label.TabIndex = 11;
             this.pacjent_label.Text = "Karta Pacjenta";
             this.pacjent_label.Click += new System.EventHandler(this.pacjent_label_Click);
-            // 
-            // adreskoreslbl
-            // 
-            this.adreskoreslbl.AutoSize = true;
-            this.adreskoreslbl.Location = new System.Drawing.Point(13, 35);
-            this.adreskoreslbl.Name = "adreskoreslbl";
-            this.adreskoreslbl.Size = new System.Drawing.Size(122, 13);
-            this.adreskoreslbl.TabIndex = 10;
-            this.adreskoreslbl.Text = "adres korespondencyjny";
-            this.adreskoreslbl.Click += new System.EventHandler(this.adreskoreslbl_Click);
             // 
             // GUI
             // 
