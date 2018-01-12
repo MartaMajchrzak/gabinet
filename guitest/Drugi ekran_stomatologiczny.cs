@@ -36,8 +36,97 @@ namespace WindowsFormsApp1
             }
 
 
-            //MessageBox.Show(c.ToString());
+            MessageBox.Show(c.ToString());
         }
+        //MessageBox.Show(c.ToString());
+        //    Button button = new Button(); 
+        //    string c;
+        //    //cki = Console.ReadKey(); 
+
+        //    //Button button = sender as Button;
+        //    c = "Dodano " + button.Text + " ząb";
+        //    //control = Console.ReadKey();
+        //    if (button.Click += button);
+        //    {
+        //        button.BackColor = Color.Red;
+        //    }
+        //    else
+        //    {
+        //        button.BackColor = Color.GhostWhite;
+        //    }
+        //}
+
+        //    Button button = sender as Button;
+        //    //c = "Dodano " + button.Text + " ząb";
+        //    //if (e.Button == MouseButtons.Right) { button.BackColor = Color.Red; }
+        //    //if (e.Button == MouseButtons.Left) { button.BackColor = Color.Orange; }
+        //    if   == MouseButtons.Left)
+        //    {
+        //        button.BackColor = Color.Red; 
+        //    }
+        //   if (MouseButtons.Right)
+        //   {
+        //        button.BackColor = Color.Red;
+        //    }
+        //    else
+        //    {
+        //       button.BackColor = Color.Red;
+        //    }
+        //    //switch (e.Button)
+        //    //{
+        //    //    case MouseButtons.Left:
+        //    //        button.BackColor = Color.Red;
+        //    //        break;
+        //    //    case MouseButtons.Right:
+        //    //        button.BackColor = Color.Blue;
+        //    //        break;
+        //    //}
+        //            //MessageBox.Show(c.ToString());
+        //    }
+        // private void dodawanie_zab(object sender, EventArgs e)
+        //{
+        //string c;
+
+
+        //    //c = "Dodano " + button.Text + " ząb";
+        //if (button.Click != )
+        //    {
+        //        button.BackColor = Color.Red;
+        //    }
+        //    else
+        //    {
+        //        button.BackColor = Color.Blue;
+        //    }
+
+
+        //   // MessageBox.Show(c.ToString());
+        //}
+
+        //var button = new Button();
+        //button.Text = "my button";
+
+        //this.Controls.Add(button);
+
+        //button.Click += (args, args) =>
+        //  {
+        //      MessageBox.Show("Some stuff");
+        //      Close();
+        //  };
+
+        //{
+        //    // Get the control the Button control is located in. In this case a GroupBox.
+        //    Control Button = button1.Parent;
+        //    // Set the text and backcolor of the parent control.
+        //    Button.Text = "My Groupbox";
+        //    Button.BackColor = Color.Blue;
+        //    //// Get the form that the Button control is contained within.
+        //    //Form myForm = button1.FindForm();
+        //    //// Set the text and color of the form containing the Button.
+        //    //myForm.Text = "The Form of My Control";
+        //    //myForm.BackColor = Color.Red;
+        //}
+
+        //}
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -52,12 +141,19 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             //magia 
-            MessageBox.Show("Czy chcesz zapisać pacjenta?");
-           // MessageBoxButtons.YesNoCancel);
-           // MessageBoxIcon.Warning);
-            //MessageBox.Show("Zapisano pacjenta");
-            Application.Exit();
+            //if (MessageBox.Show("Czy chcesz zapisać pacjenta?", "Okno potwierdzenia", MessageBoxButtons.YesNo) == DialogResult.Yes)
+
+            DialogResult dialogResult = MessageBox.Show("Czy chcesz zapisać pacjenta?", "Okno potwierdzenia", MessageBoxButtons.YesNo);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                MessageBox.Show("Zapisano pacjenta");
+                Application.Exit();
+            }
+
+
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
