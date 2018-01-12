@@ -12,16 +12,15 @@ namespace guitest
 {
     public class DataAccess // zawiera  wyszukiwanie i rejestrowanie pacjentow 
     { //tworzymy metode
-        public List <Pacjent> GetPeople (string nazwisko)
-        {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("tablicaPacjent")))//pobierz cnn string z
+        public List <Pacjent> GetPeople (string Nazwisko)
+        {  
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("tablicaPacjent")))//pobierz cnn string z
                 //helpera dla bazy danych o nazwie: tablica pacjent
             {
                 //rozmawiamy z sql
 
-                var output = connection.Query<Pacjent>("dbo.Pacjenci_GetByLastName @Nazwisko", new { Nazwisko = nazwisko }).ToList(); //dbo
-              
-                return output;
+                var output = connection.Query<Pacjent>($"Select * from tablicaPacjent where nazwisko = '{Nazwisko}'").ToList();  //dbo
+               return output;
             } //query chcemy dane z bazy, chcemy liste pacjenta, <pacjent>- typ danych
         }
 
@@ -29,7 +28,7 @@ namespace guitest
         {// 
            
             
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("bazaGabinetuStomatologicznego")))
+            using (IDbConnection connection = new SqlConnection(Helper.CnnVal("bazaGabinetuStomatologicznego")))
             {//
                 connection.Open();
                 

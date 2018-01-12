@@ -57,7 +57,7 @@ namespace guitest
             DataAccess db = new DataAccess();
             db.ZarejestrujPacjenta(textBoxImie.Text, textBoxNazwisko.Text, textBoxemail.Text, textBoxnrtel.Text, textBoxPesel.Text, dataurPacjenta.Text, textBoxadreskores.Text);
            
-           textBoxImie.Text = "";
+            textBoxImie.Text = "";
             textBoxNazwisko.Text = "";
             textBoxemail.Text = "";
             textBoxnrtel.Text = "";
@@ -66,7 +66,7 @@ namespace guitest
             dataurPacjenta.Text = "";
             textBoxadreskores.Text = "";
            
-           /* Pacjent.Imie = textBoxImie.Text;
+           /* Pacjent.imie = textBoxImie.Text;
             Pacjent.Nazwisko = textBoxNazwisko.Text;
             Pacjent.Email = textBoxemail.Text;
             Pacjent.NrTel = textBoxnrtel.Text;
@@ -156,9 +156,7 @@ namespace guitest
 
         private void adreskoreslbl_Click(object sender, EventArgs e)
         {
-           kartaZabieg karta = new kartaZabieg();
-            karta.Show();
-            Visible = false;
+           
         }
 
         private void buttonszukaj_Click(object sender, EventArgs e)
@@ -168,7 +166,9 @@ namespace guitest
 
         private void buttonszukaj_Click_1(object sender, EventArgs e)
         {
-
+            guitest.Szukaj wyszukiwanie = new guitest.Szukaj();
+            wyszukiwanie.Show();
+            Visible = false;
         }
     }
 }
